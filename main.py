@@ -25,11 +25,6 @@ class contact(db.Model):
 def about():
     return render_template('about.html')
 
-@app.errorhandler(500)
-def internal_error(error):
-
-    return "500 error...Try different link"
-
 @app.errorhandler(404)
 def not_found(error):
     return "404 error",404
