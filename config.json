@@ -1,0 +1,10 @@
+{
+    "params":{
+        "local_url":"mysql://root:@localhost/flash",
+        "admin":"admin",
+        "password":"1234",
+        "subname":"flash"
+
+
+    }
+}
