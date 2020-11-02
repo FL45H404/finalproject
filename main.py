@@ -55,5 +55,5 @@ def links():
         return render_template('yt.html',data=data)
 
 if __name__ == "__main__":
-    app.config['SECRET_KEY'] = "flash"
+    app.config['SECRET_KEY'] = "0b12f46dg7f11fd"
     app.run(debug=True)
