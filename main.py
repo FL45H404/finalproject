@@ -56,5 +56,5 @@ def links():
 
 if __name__ == "__main__":
     
-    app.secret_key = 'e5ac358c-f0bf-11e5-9e39-d3b532c10a28'
+    app.secret_key = 'vipul flash k2 waghamode ##'
     app.run(debug=True)
