@@ -55,5 +55,6 @@ def links():
         return render_template('yt.html',data=data)
 
 if __name__ == "__main__":
-#     app.config['SECRET_KEY'] = "e5ac358c-f0bf-11e5-9e39-d3b532c10a28"
+    
+    app.secret_key = 'e5ac358c-f0bf-11e5-9e39-d3b532c10a28'
     app.run(debug=True)
