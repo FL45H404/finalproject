@@ -56,4 +56,4 @@ def links():
 
 if __name__ == "__main__":
     app.config['SECRET_KEY'] = "flash"
-    app.run(debug=False)
+    app.run(debug=True)
