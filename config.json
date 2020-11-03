@@ -3,7 +3,8 @@
         "local_url":"mysql://root:@localhost/flash",
         "admin":"admin",
         "password":"1234",
-        "subname":"flash"
+        "subname":"flash",
+        "key":"dh8nbsv/sjewo#sjk12fg"
 
 
     }
