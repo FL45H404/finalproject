@@ -33,5 +33,5 @@ def links():
 
 if __name__ == "__main__":
     
-    app.secret_key = 'dh8nbsv/sjewo#sjk12fg'
+    app.secret_key = param['key']
     app.run(debug=True)
