@@ -24,6 +24,7 @@ def download():
 @app.route('/link',methods=['GET','POST'])
 def links():
     link=request.form.get('name')
+    session['link']=link
     with youtube_dl.YoutubeDL() as ydl:
 
         url=ydl.extract_info(link,download=False)
@@ -33,5 +34,7 @@ def links():
 
 if __name__ == "__main__":
     
-    app.secret_key = param['key']
+    app.secret_key = 'super secret key'
+    app.config['SESSION_TYPE'] = 'filesystem'
+    sess.init_app(app)
     app.run(debug=True)
