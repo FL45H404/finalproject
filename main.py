@@ -9,6 +9,7 @@ with open('config.json','r') as c:
     param=json.load(c)['params']
 
 app = Flask(__name__) 
+app.config.from_object('config.Production')
 
 @app.route('/about')
 def about():
@@ -34,7 +35,4 @@ def links():
 
 if __name__ == "__main__":
     
-    app.secret_key = 'super secret key'
-    app.config['SESSION_TYPE'] = 'filesystem'
-    sess.init_app(app)
     app.run(debug=True)
