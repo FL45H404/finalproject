@@ -4,5 +4,5 @@ class Config(object):
     
 
 class Production(Config):
-    DEBUG=True
+    DEBUG=False
     SECRET_KEY=os.urandom(24)
